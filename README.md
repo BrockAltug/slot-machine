@@ -1,4 +1,4 @@
-# Professional Slot Machine Game
+# Slot Machine Game
 
 A dynamic and interactive online slot machine game that offers a fun and engaging experience. The game allows users to place bets, spin the reels, and try their luck with various icons, each having its own payout rate and winning odds. This project utilizes localStorage to track the last 10 wins and provides a responsive and visually appealing interface.
 
@@ -14,9 +14,15 @@ A dynamic and interactive online slot machine game that offers a fun and engagin
 - [Future Improvements](#future-improvements)
 - [Summary](#summary)
 
+## Demo 🎮
+
+Check out the live version of the Slot Machine Game here:
+
+[Play the Slot Machine Game](https://brockaltug.github.io/slot-machine/)
+
 ## Overview
 
-The Professional Slot Machine Game is an exciting and customizable web-based slot machine where players can place bets, spin the reels, and potentially win large payouts. The game includes a variety of icons with different payout values and odds. Players can track their balance, adjust their bets, view the last 10 wins, and clear their win history. The game also features winning animations and sound effects for an immersive experience.
+This Slot Machine Game is an exciting and customizable web-based slot machine where players can place bets, spin the reels, and potentially win large payouts. The game includes a variety of icons with different payout values and odds. Players can track their balance, adjust their bets, view the last 10 wins, and clear their win history. The game also features winning animations and sound effects for an immersive experience.
 
 ## Features
 
@@ -90,4 +96,4 @@ Each icon also has its own probability of being selected, making some icons much
 
 ## Summary
 
-The Professional Slot Machine Game is a fully interactive and engaging web application that simulates the classic slot machine experience. It offers a smooth user interface, customizable bets, realistic payouts, and winning odds for each icon. With localStorage integration and responsive design, it provides a seamless experience for players on any device. Whether you're a casual gamer or a dedicated slot enthusiast, this project delivers the thrill of a real slot machine from the comfort of your browser.
+This Slot Machine Game is a fully interactive and engaging web application that simulates the classic slot machine experience. It offers a smooth user interface, customizable bets, realistic payouts, and winning odds for each icon. With localStorage integration and responsive design, it provides a seamless experience for players on any device. Whether you're a casual gamer or a dedicated slot enthusiast, this project delivers the thrill of a real slot machine from the comfort of your browser.
