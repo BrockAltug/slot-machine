@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Slot Machine Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <div class="game-content">
+            <h1>Slot Machine Game</h1>
+            <h3 id="balance">Balance: $0</h3>
+
+            <!-- Add a fixed-height container for the message -->
+            <div class="message-box">
+                <h3 id="message">Please spin...</h3>
+            </div>
+
+            <div class="controls">
+                <div class="bet-options">
+                    <button class="bet-btn" data-bet="0.50">$0.50</button>
+                    <button class="bet-btn" data-bet="1">$1</button>
+                    <button class="bet-btn" data-bet="2">$2</button>
+                    <button class="bet-btn" data-bet="5">$5</button>
+                    <button class="bet-btn" data-bet="10">$10</button>
+                </div>
+                <button class="mt-4 mb-4" id="spin-btn">Spin</button>
+            </div>
+
+            <div class="slot-machine">
+                <div class="slot"><img src="assets/images/icon-01.png" alt="slot icon" id="slot-1"></div>
+                <div class="slot"><img src="assets/images/icon-01.png" alt="slot icon" id="slot-2"></div>
+                <div class="slot"><img src="assets/images/icon-01.png" alt="slot icon" id="slot-3"></div>
+                <div class="slot"><img src="assets/images/icon-01.png" alt="slot icon" id="slot-4"></div>
+                <div class="slot"><img src="assets/images/icon-01.png" alt="slot icon" id="slot-5"></div>
+                <div class="slot"><img src="assets/images/icon-01.png" alt="slot icon" id="slot-6"></div>
+                <div class="slot"><img src="assets/images/icon-01.png" alt="slot icon" id="slot-7"></div>
+                <div class="slot"><img src="assets/images/icon-01.png" alt="slot icon" id="slot-8"></div>
+                <div class="slot"><img src="assets/images/icon-01.png" alt="slot icon" id="slot-9"></div>
+            </div>
+
+        </div>
+        
+        <!-- New Win History Section -->
+        <div class="win-history">
+            <h3>Last 10 Wins</h3>
+            <ul id="win-list">
+                <!-- List of last 10 wins will be displayed here -->
+            </ul>
+            <button id="clear-history-btn">Clear Win History</button>
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
