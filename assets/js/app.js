@@ -8,7 +8,7 @@ const icons = [
     'assets/images/icon-03.png', // strawberries
     'assets/images/icon-04.png', // watermelons
     'assets/images/icon-05.png', // fruit baskets
-    'assets/images/icon-06.png' // stars
+    'assets/images/icon-06.png'  // stars
 ];
 
 const payouts = {
@@ -29,6 +29,12 @@ const odds = {
     'assets/images/icon-05.png': 5,   // 5% chance
     'assets/images/icon-06.png': 2    // 2% chance
 };
+
+// Background music (continuous loop)
+const backgroundMusic = new Audio('assets/sounds/background-music.mp3');
+backgroundMusic.loop = true;
+backgroundMusic.volume = 0.3; // Lower volume for background music
+backgroundMusic.play(); // Start playing background music
 
 // Deposit money
 function depositMoney() {
@@ -170,8 +176,8 @@ function applyWinningAnimation() {
 
 // Play sound on win/lose
 function playSound(type) {
-    const audio = new Audio(type === 'win' ? 'assets/sounds/win-sound.mp3' : 'assets/sounds/lose-sound.mp3');
-    audio.play();
+    const sound = new Audio(type === 'win' ? 'assets/sounds/win-sound.mp3' : 'assets/sounds/lose-sound.mp3');
+    sound.play();
 }
 
 // On window load, set up event listeners
