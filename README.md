@@ -14,6 +14,9 @@ A dynamic and interactive online slot machine game that offers a fun and engagin
 - [Future Improvements](#future-improvements)
 - [Summary](#summary)
 
+<img src="./assets/images/image2.png" alt="Bet Selection" width="800" height="400"/> 
+<img src="./assets/images/image.png" alt="Slot Game" width="800" height="400"/>
+
 ## Demo 🎮
 
 Check out the live version of the Slot Machine Game here:
