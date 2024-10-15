@@ -34,7 +34,7 @@ const odds = {
 const backgroundMusic = new Audio('assets/sounds/background-music.mp3');
 backgroundMusic.loop = true;
 backgroundMusic.volume = 0.3; // Lower volume for background music
-backgroundMusic.play(); // Start playing background music
+// backgroundMusic.play(); // Removed autoplay from here
 
 // Deposit money
 function depositMoney() {
@@ -42,6 +42,8 @@ function depositMoney() {
     if (deposit !== null && !isNaN(deposit) && deposit > 0) {
         balance = parseFloat(deposit);
         updateBalance();
+        // Start playing background music after a valid deposit
+        backgroundMusic.play();
     } else {
         alert("Please enter a valid amount.");
         depositMoney();
