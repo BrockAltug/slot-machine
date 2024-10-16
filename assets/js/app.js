@@ -34,7 +34,26 @@ const odds = {
 const backgroundMusic = new Audio('assets/sounds/background-music.mp3');
 backgroundMusic.loop = true;
 backgroundMusic.volume = 0.3; // Lower volume for background music
-// backgroundMusic.play(); // Removed autoplay from here
+let isBackgroundMusicPlaying = false;
+
+// Function to start playing background music if it's not already playing
+function enableBackgroundMusic() {
+    if (!isBackgroundMusicPlaying) {
+        backgroundMusic.play();
+        isBackgroundMusicPlaying = true;
+
+        // Event listener to set the flag back to false when music ends or pauses
+        backgroundMusic.addEventListener('ended', () => {
+            isBackgroundMusicPlaying = false;
+        });
+    }
+}
+
+// Add an event listener for user interactions (clicks, keypresses, touches)
+document.addEventListener('click', enableBackgroundMusic);
+document.addEventListener('keydown', enableBackgroundMusic);
+document.addEventListener('touchstart', enableBackgroundMusic);
+
 
 // Deposit money
 function depositMoney() {
@@ -177,9 +196,18 @@ function applyWinningAnimation() {
 }
 
 // Play sound on win/lose
+let soundPlaying = false;
 function playSound(type) {
-    const sound = new Audio(type === 'win' ? 'assets/sounds/win-sound.mp3' : 'assets/sounds/lose-sound.mp3');
-    sound.play();
+    if (!soundPlaying) {
+        const sound = new Audio(type === 'win' ? 'assets/sounds/win-sound.mp3' : 'assets/sounds/lose-sound.mp3');
+        soundPlaying = true;
+
+        // Play the sound and set the flag to false once the sound finishes
+        sound.play();
+        sound.addEventListener('ended', () => {
+            soundPlaying = false;
+        });
+    }
 }
 
 // On window load, set up event listeners
