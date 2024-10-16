@@ -30,9 +30,8 @@ const odds = {
     'assets/images/icon-06.png': 2    // 2% chance
 };
 
-// Background music (continuous loop)
+// Background music (play only once on interaction)
 const backgroundMusic = new Audio('assets/sounds/background-music.mp3');
-backgroundMusic.loop = true;
 backgroundMusic.volume = 0.3; // Lower volume for background music
 let isBackgroundMusicPlaying = false;
 
@@ -42,7 +41,7 @@ function enableBackgroundMusic() {
         backgroundMusic.play();
         isBackgroundMusicPlaying = true;
 
-        // Event listener to set the flag back to false when music ends or pauses
+        // Event listener to set the flag back to false when music ends
         backgroundMusic.addEventListener('ended', () => {
             isBackgroundMusicPlaying = false;
         });
